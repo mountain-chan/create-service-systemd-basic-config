@@ -43,3 +43,10 @@ ExecStart=/home/ubuntu/miniconda3/envs/base37/bin/gunicorn --workers 2 -b 0.0.0.
 [INSTALL]
 WantedBy=multi-user.target
 ```
+
+## Reload systemctl and enable/start/stop/restart/status service
+```
+sudo systemctl daemon-reload
+
+sudo systemctl enable/start/stop/restart/status <service_name>.service
+```
